@@ -1,11 +1,11 @@
 import datetime
+import multiprocessing
 def contador(funcao):
     def funcao_decorada(*args, **kwargs):
-        global lista
-        print('Iniciando...')
+        qtd_cores = multiprocessing.cpu_count()
+        print(f'Realizando o processamento matemático com {qtd_cores} core(s).')
         inicio = datetime.datetime.now()
-        funcao(*args, **kwargs)
+        funcao(*args, **kwargs, qtd_cores=qtd_cores)
         tempo = datetime.datetime.now() - inicio
         print(f'Terminou em {tempo.total_seconds():.2f} segundos.')
-        lista.append(tempo.total_seconds())
     return funcao_decorada
