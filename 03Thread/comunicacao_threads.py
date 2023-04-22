@@ -24,7 +24,7 @@ if __name__ == '__main__':
     th1 = Thread(target=gerador_de_dados, args=(queue,))
     th2 = Thread(target=consumidor_de_dados, args=(queue,))
 
-
+    # Aqui é sequancial. Neste caso não há vantagem, mas uma boa demosntração.
     th1.start()
     th1.join()
 
