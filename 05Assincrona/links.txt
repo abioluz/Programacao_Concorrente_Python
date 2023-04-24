@@ -1,0 +1,5 @@
+https://www.google.com/
+https://www.significados.com.br/empresa/
+https://www.gov.br/empresas-e-negocios/pt-br
+https://clinipamweb.clinipam.com.br/solusweb/empresa/index.php
+https://docs.aiohttp.org/en/latest/web_exceptions.html
